@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Details | Elite Estates</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="./index.html" class="logo-section">
+
+      <div class="logo-icon">
+        <i class="fa-regular fa-building"></i>
+      </div>
+
+      <div>
+        <h2>Elite Estates</h2>
+        <p>Premium Real Estate</p>
+      </div>
+
+    </a>
+
+    <nav class="nav">
+
+        <a href="index.html" class="nav-link active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+      
+      </nav>
+
+    <a
+      href="https://wa.me/123456789"
+      target="_blank"
+      class="header-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      WhatsApp
+    </a>
+
+  </header>
+
+  <!-- DETAILS PAGE -->
+  <main class="details-page">
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span id="breadcrumbTitle">Property Details</span>
+    </div>
+
+    <!-- IMAGE GALLERY -->
+    <section class="details-gallery">
+
+      <div class="main-image-wrap">
+
+        <span class="details-badge" id="detailsBadge">For Sale</span>
+
+        <button class="gallery-arrow left" id="prevImage">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img
+          id="mainPropertyImage"
+          src=""
+          alt="Property Image"
+        >
+
+        <button class="gallery-arrow right" id="nextImage">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="gallery-dots" id="galleryDots"></div>
+
+      </div>
+
+      <div class="thumbnail-row" id="thumbnailRow"></div>
+
+    </section>
+
+    <!-- DETAILS CONTENT -->
+    <section class="details-layout">
+
+      <!-- LEFT CARD -->
+      <div class="details-card">
+
+        <h1 id="detailTitle">Modern Villa with Pool</h1>
+
+        <div class="detail-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="detailLocation">Beverly Hills, CA</span>
+        </div>
+
+        <div class="detail-price" id="detailPrice">
+          $850,000
+        </div>
+
+        <div class="detail-stats">
+
+          <div class="detail-stat">
+            <div class="stat-icon orange">
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <div>
+              <strong id="detailBeds">4</strong>
+              <span>Bedrooms</span>
+            </div>
+          </div>
+
+          <div class="detail-stat">
+            <div class="stat-icon blue">
+              <i class="fa-solid fa-bath"></i>
+            </div>
+            <div>
+              <strong id="detailBaths">3</strong>
+              <span>Bathrooms</span>
+            </div>
+          </div>
+
+          <div class="detail-stat">
+            <div class="stat-icon green">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div>
+              <strong id="detailAreaNumber">320</strong>
+              <span>m² Area</span>
+            </div>
+          </div>
+
+          <div class="detail-stat">
+            <div class="stat-icon purple">
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <div>
+              <strong id="detailParking">2</strong>
+              <span>Parking</span>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <h2>Description</h2>
+
+        <p class="detail-description" id="detailDescription">
+          Stunning modern villa featuring contemporary architecture,
+          high-end finishes, and a beautiful swimming pool.
+        </p>
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="details-sidebar">
+
+        <h2>Interested?</h2>
+
+        <a
+          href="https://wa.me/123456789"
+          target="_blank"
+          class="details-whatsapp"
+          id="detailsWhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Ask About This Property
+        </a>
+
+        <div class="info-list">
+
+          <div class="info-row">
+            <span>Property Type</span>
+            <strong id="sideType">Sale</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Bedrooms</span>
+            <strong id="sideBeds">4</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Bathrooms</span>
+            <strong id="sideBaths">3</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Area</span>
+            <strong id="sideArea">320 m²</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Parking</span>
+            <strong id="sideParking">2 spaces</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Featured</span>
+            <strong>Yes</strong>
+          </div>
+
+        </div>
+
+        <div class="side-contact">
+
+          <h3>Contact Information</h3>
+
+          <p>Phone: +961 03123123</p>
+
+          <p>Email: info@eliteestates.com</p>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Estates</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo-section">
+
+      <div class="logo-icon">
+        <i class="fa-regular fa-building"></i>
+      </div>
+
+      <div>
+        <h2>Elite Estates</h2>
+        <p>Premium Real Estate</p>
+      </div>
+
+    </div>
+
+    <nav class="nav">
+
+        <a href="index.html" class="nav-link active">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+      
+      </nav>
+
+    <a
+      href="https://wa.me/123456789"
+      target="_blank"
+      class="header-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      WhatsApp
+    </a>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <img
+      src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop"
+      alt=""
+      class="hero-bg"
+    >
+
+    <div class="hero-content">
+
+      <h1>Find Your Dream Home</h1>
+
+      <p>
+        Discover premium properties in the most desirable locations
+      </p>
+
+      <!-- SEARCH -->
+      <div class="search-box">
+
+        <div class="search-input">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <input
+            type="text"
+            placeholder="Search by location or property name..."
+            id="searchInput"
+          />
+
+        </div>
+
+        <button id="searchBtn">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          Search
+
+        </button>
+
+      </div>
+
+      <!-- FILTERS -->
+      <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+          All Properties
+        </button>
+      
+        <button class="filter-btn" data-filter="sale">
+          For Sale
+        </button>
+      
+        <button class="filter-btn" data-filter="rent">
+          For Rent
+        </button>
+      
+        <button class="filter-btn" data-filter="land">
+          Land
+        </button>
+      
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROPERTIES -->
+  <section class="properties-section">
+
+    <div class="section-title">
+
+      <h2>Available Properties</h2>
+
+      <p id="resultsText">
+        6 properties match your search
+      </p>
+
+    </div>
+
+    <div
+      class="properties-grid"
+      id="propertiesGrid"
+    >
+
+      <!-- JS INSERTS CARDS -->
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+
+    <div class="about-container">
+
+      <h2>
+        About <span>Elite Estates</span>
+      </h2>
+
+      <p class="about-text">
+
+        With over 15 years of experience in the real estate market,
+        Elite Estates has become the trusted name for buying,
+        selling, and renting premium properties.
+        Our expert team is dedicated to helping you find
+        your perfect home.
+
+      </p>
+
+      <div class="about-features">
+
+        <!-- FEATURE -->
+        <div class="feature-box">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+
+          <h3>Award Winning</h3>
+
+          <p>
+            Recognized for excellence in real estate services
+          </p>
+
+        </div>
+
+        <!-- FEATURE -->
+        <div class="feature-box">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <h3>Expert Team</h3>
+
+          <p>
+            Professional agents with local market expertise
+          </p>
+
+        </div>
+
+        <!-- FEATURE -->
+        <div class="feature-box">
+
+          <div class="feature-icon">
+            <i class="fa-solid fa-building"></i>
+          </div>
+
+          <h3>Premium Properties</h3>
+
+          <p>
+            Curated selection of luxury homes and estates
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+
+    <div class="section-title">
+
+      <h2>Get In Touch</h2>
+
+      <p>
+        Ready to find your dream property? Contact us today
+      </p>
+
+    </div>
+
+    <div class="contact-container">
+
+      <!-- LEFT -->
+      <div class="contact-card">
+
+        <h3>Contact Information</h3>
+
+        <div class="contact-item">
+
+          <span>Phone</span>
+
+          <strong>+961 03123123</strong>
+
+        </div>
+
+        <div class="contact-item">
+
+          <span>Email</span>
+
+          <strong>info@eliteestates.com</strong>
+
+        </div>
+
+        <div class="contact-item">
+
+          <span>Address</span>
+
+          <strong>
+
+           beirut
+
+            <br>
+
+            street...
+
+          </strong>
+
+        </div>
+
+        <a
+          href="https://wa.me/123456789"
+          target="_blank"
+          class="contact-whatsapp"
+        >
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          Message on WhatsApp
+
+        </a>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container">
+
+        <iframe
+  src="https://maps.google.com/maps?q=Beirut%20Lebanon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  loading="lazy"
+  allowfullscreen
+></iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-center">
+
+        <h3>Elite Estates</h3>
+      
+        <p>Premium Real Estate Services</p>
+      
+      </div>
+      
+      <div class="footer-bottom">
+      
+        © 2026 Elite Estates. All rights reserved.
+      
+      </div>
+
+  </footer>
+
+  <!-- MODAL -->
+  <div
+    class="property-modal"
+    id="propertyModal"
+  >
+
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+    ></div>
+
+    <div class="modal-content">
+
+      <button
+        class="close-modal"
+        id="closeModal"
+      >
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+      <div id="modalBody"></div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
