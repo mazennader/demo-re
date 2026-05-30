@@ -278,7 +278,7 @@ const properties = [
             <button class="details-btn">View Details</button>
   
             <a
-              href="https://wa.me/123456789?text=Hello%20Elite%20Estates%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}"
+              href="https://wa.me/70643404?text=Hello%20Paul%20Fadel%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}"
               target="_blank"
               class="whatsapp-btn"
             >
@@ -368,7 +368,7 @@ const properties = [
     const sideParking = document.getElementById("sideParking");
     const detailsWhatsApp = document.getElementById("detailsWhatsApp");
   
-    document.title = `${property.title} | Elite Estates`;
+    document.title = `${property.title} | Paul Fadel Real Estate`;
   
     breadcrumbTitle.innerText = property.title;
     detailTitle.innerText = property.title;
@@ -390,7 +390,7 @@ const properties = [
     detailsBadge.classList.add(getBadgeClass(property.type));
   
     detailsWhatsApp.href =
-      `https://wa.me/123456789?text=Hello%20Elite%20Estates%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}`;
+      `https://wa.me/70643404?text=Hello%20Paul%20Fadel%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}`;
   
     const detailStats = document.querySelector(".detail-stats");
     const infoList = document.querySelector(".info-list");
