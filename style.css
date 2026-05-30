@@ -1200,3 +1200,17 @@
   .badge-land{
     background:#16a34a;
   }
+  .logo-icon{
+    width:54px;
+    height:54px;
+    border-radius:14px;
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  
+  .logo-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
