@@ -24,25 +24,6 @@ const properties = [
     },
     {
       id: 2,
-      title: "Contemporary Family Home",
-      location: "Manhattan, NY",
-      price: "$3,500/mo",
-      type: "rent",
-      beds: 3,
-      baths: 2,
-      area: "180m²",
-      parking: 1,
-      featured: "Yes",
-      images: [
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop"
-      ],
-      description:
-        "Elegant family home in a premium neighborhood with spacious rooms, modern architecture, and beautiful natural lighting."
-    },
-    {
-      id: 3,
       title: "Luxury Estate with Garden",
       location: "Miami Beach, FL",
       price: "$1,200,000",
@@ -61,7 +42,7 @@ const properties = [
         "Large luxury estate featuring a private garden, pool area, premium interior design, and spacious family areas."
     },
     {
-      id: 4,
+      id: 3,
       title: "Elegant Downtown Apartment",
       location: "San Francisco, CA",
       price: "$2,800/mo",
@@ -79,70 +60,14 @@ const properties = [
       description:
         "Modern downtown apartment with amazing city views, clean interiors, and a practical layout for comfortable living."
     },
-    {
-      id: 5,
-      title: "Coastal Modern Residence",
-      location: "Malibu, CA",
-      price: "$2,200,000",
-      type: "sale",
-      beds: 6,
-      baths: 5,
-      area: "520m²",
-      parking: 4,
-      featured: "Yes",
-      images: [
-        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600585152915-d208bec867a1?q=80&w=1600&auto=format&fit=crop"
-      ],
-      description:
-        "Stunning coastal residence with open spaces, ocean-inspired design, high-end finishes, and excellent privacy."
-    },
-    {
-      id: 6,
-      title: "Charming Suburban House",
-      location: "Austin, TX",
-      price: "$4,200/mo",
-      type: "rent",
-      beds: 4,
-      baths: 3,
-      area: "240m²",
-      parking: 2,
-      featured: "No",
-      images: [
-        "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600585153490-76fb20a32601?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1600&auto=format&fit=crop"
-      ],
-      description:
-        "Comfortable suburban house with modern finishes, outdoor patio, large bedrooms, and a calm family-friendly location."
-    },
   
     /* =========================
        LAND EXAMPLES
     ========================= */
   
+    
     {
-      id: 7,
-      title: "Residential Land with Sea View",
-      location: "Batroun, Lebanon",
-      price: "$180,000",
-      type: "land",
-      area: "1,200m²",
-      zoning: "Residential",
-      roadAccess: "Yes",
-      view: "Sea View",
-      featured: "Yes",
-      images: [
-        "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop"
-      ],
-      description:
-        "Premium residential land located in Batroun with a beautiful sea view, road access, and excellent potential for a private villa or investment project."
-    },
-    {
-      id: 8,
+      id: 4,
       title: "Mountain View Land Plot",
       location: "Faqra, Lebanon",
       price: "$250,000",
@@ -278,7 +203,7 @@ const properties = [
             <button class="details-btn">View Details</button>
   
             <a
-              href="https://wa.me/70643404?text=Hello%20Paul%20Fadel%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}"
+              href="https://wa.me/03123123?text=Hello%20R%20E%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}"
               target="_blank"
               class="whatsapp-btn"
             >
@@ -368,7 +293,7 @@ const properties = [
     const sideParking = document.getElementById("sideParking");
     const detailsWhatsApp = document.getElementById("detailsWhatsApp");
   
-    document.title = `${property.title} | Paul Fadel Real Estate`;
+    document.title = `${property.title} | RE Real Estate`;
   
     breadcrumbTitle.innerText = property.title;
     detailTitle.innerText = property.title;
@@ -390,7 +315,7 @@ const properties = [
     detailsBadge.classList.add(getBadgeClass(property.type));
   
     detailsWhatsApp.href =
-      `https://wa.me/70643404?text=Hello%20Paul%20Fadel%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}`;
+      `https://wa.me/70643404?text=Hello%20R%20E%2C%20I%20am%20interested%20in%20${encodeURIComponent(property.title)}`;
   
     const detailStats = document.querySelector(".detail-stats");
     const infoList = document.querySelector(".info-list");
